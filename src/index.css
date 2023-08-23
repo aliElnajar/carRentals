@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text {
+  color: #f5eec2 #416a59 #39395f #73a24e #a9c25d;
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.icon {
+  color: "red";
+  font-size: "30px";
+  padding: "5px";
+  background-color: "black";
+  border-radius: "15px";
+}
+
+@layer components {
+  .nav-button {
+    @apply text-[16px] font-semibold btn-ghost normal-case btn  cursor-pointer;
+  }
+  .error-msg {
+    @apply text-red-800 tracking-wide mx-auto;
+  }
+  .form-input {
+    @apply input input-bordered  py-3 w-full flex-1;
+  }
+  .testimony-icons {
+    @apply text-[30px] bg-[#416a59] rounded-[15px] hover:bg-[#a9c25d] text-white p-[5px];
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
